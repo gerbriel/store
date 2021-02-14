@@ -1,14 +1,31 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/row';
+import './Product.css';
+import LinesEllipsis from 'react-lines-ellipsis'
 
-const ProductGrid = ({ items, isLoading }) => {
+const ProductGrid = ({ items, isLoading}) => {
     return isLoading ? (
     <p>loading...</p>
     ) : (
-    <section>
-        {items.map(item => (
-            <h1>{item.title}</h1>
+    <div className='grid'>
+        {items.map((item, index)=> (
+            <div className='box' key={index}>
+                <img src={item.image} alt={item.description}/>
+                <p>{item.id}. {item.title}</p>
+                <Container>
+                    <Row>
+                        <button>+</button>
+                    </Row>
+                </Container>
+            </div>
         ))}
-    </section>
+    </div>
     )
+
 }
 export default ProductGrid
+

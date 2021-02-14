@@ -3,11 +3,16 @@ import React from 'react';
 
 
 export default function Cart(props) {
+  const {cartItems}=props;
     return (
-      <div>
+      <aside>
       <h2>Shopping cart</h2>
-      <p>Title:</p>
-      <p>QTY:</p>
-      </div>
+
+        {cartItems.length === 0 && 
+          <div>
+          Cart is Empty 
+          </div>
+      }
+</aside>
     );
   }

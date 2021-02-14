@@ -5,16 +5,23 @@ import Cart from './components/Cart/Cart';
 import ProductGrid from './components/Product/ProductGrid';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/row';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Search from './components/Search/Search';
+
 
 
 const App = () => {
   const [ items, setItems ] = useState([])
   const [ isLoading, setIsLoading ] = useState(true)
-
+  const [ query, setQuery ] = useState('');
+  const [cartItems, setCartItems ] = useState([]);
+  
   useEffect(() => {
     const fetchItems = async () => {
-      const result = await axios(`https://fakestoreapi.com/products/1`)
+      const result = await axios(`https://fakestoreapi.com/products?title=${query}`)
       
       console.log(result.data)
       
@@ -22,15 +29,19 @@ const App = () => {
       setIsLoading(false)
     }
     fetchItems()
-  }, [])
+  }, [query])
 
   return (
     <div className="App">
       <Navigation/>
       <div>
+      <Container>
+        <Row>
         <ProductGrid isLoading={isLoading} items={items}/>
-        <hr/>
-        <Cart/>
+        <Cart cartItems={cartItems}/>
+        </Row>
+      </Container>
+  
       </div>
  
     </div>
