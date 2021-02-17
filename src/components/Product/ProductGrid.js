@@ -15,7 +15,7 @@ const ProductGrid = ({ items, isLoading}) => {
         {items.map((item, index)=> (
             <div className='box' key={index}>
                 <img src={item.image} alt={item.description}/>
-                <p>{item.id}. {item.title}</p>
+                <p>{item.title}</p>
                 <Container>
                     <Row>
                         <button>+</button>

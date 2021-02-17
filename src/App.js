@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from './components/Search/Search';
+import Auth from './containers/Auth/Auth';
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
 
   return (
     <div className="App">
+    <Auth/>
       <Navigation/>
       <div>
       <Container>

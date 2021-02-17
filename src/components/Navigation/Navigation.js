@@ -26,10 +26,11 @@ export default function Navigation (props) {
 
       <Search/>
       <Form inline>
-      <Nav.Link href="#product-details">Product Details</Nav.Link>
-      <Nav.Link href="#cart">Cart</Nav.Link>
-      <Nav.Link href="#checkout">Checkout</Nav.Link>
-      <Nav.Link bg="light"href="#log-out">Log out</Nav.Link>
+      <Nav.Link href="/product-details">Product Details</Nav.Link>
+      <Nav.Link href="/cart">Cart</Nav.Link>
+      <Nav.Link href="/checkout">Checkout</Nav.Link>
+      <Nav.Link href="/auth">Login</Nav.Link>
+      <Nav.Link bg="light"href="/log-out">Log out</Nav.Link>
     </Form>
     </Navbar.Collapse>
   </Navbar>
