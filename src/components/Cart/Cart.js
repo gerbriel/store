@@ -11,6 +11,8 @@ export default function Cart(props) {
         {cartItems.length === 0 && 
           <div>
           Cart is Empty 
+          <hr/>
+    
           </div>
       }
 </aside>

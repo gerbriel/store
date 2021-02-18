@@ -11,6 +11,8 @@ import Row from 'react-bootstrap/row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from './components/Search/Search';
 import Auth from './containers/Auth/Auth';
+import {BrowserRouter} from 'react-router-dom';
+import Logout from './components/Logout/Logout';
 
 
 
@@ -33,6 +35,7 @@ const App = () => {
   }, [query])
 
   return (
+    <BrowserRouter>
     <div className="App">
     <Auth/>
       <Navigation/>
@@ -45,9 +48,11 @@ const App = () => {
       </Container>
   
       </div>
+      <Logout />
  
     </div>
-  )
+    </BrowserRouter>
+  );
 }
 
 export default App;
