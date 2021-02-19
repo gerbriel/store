@@ -15,8 +15,6 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Logout from './components/Logout/Logout';
 import ProductDetails from './components/Product/ProductDetails/ProductDetails';
 
-
-
 const App = () => {
   const [ items, setItems ] = useState([])
   const [ isLoading, setIsLoading ] = useState(true)
