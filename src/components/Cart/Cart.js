@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../Cart/Cart.css';
 
 
 export default function Cart(props) {
@@ -10,7 +10,13 @@ export default function Cart(props) {
 
         {cartItems.length === 0 && 
           <div>
-          Cart is Empty 
+          <br/>
+          <h5>title: n/a </h5>
+          <p>qty: 0</p>
+          <p>Total: $0 </p>
+          <button className='add-cart-button'> add </button>
+          <button className='remove-cart-button'> remove</button>
+
           <hr/>
     
           </div>
@@ -18,3 +24,4 @@ export default function Cart(props) {
 </aside>
     );
   }
+  

@@ -1,0 +1,47 @@
+.product-details{
+    width: 100vw;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.filter-sort{
+    width: 80vw;
+    margin: 0px;
+}
+
+img {
+    padding: 10px 0px;
+    max-width:25%;
+    max-height: 35%;
+}
+
+select{
+    width: 80vw;
+    text-overflow:inherit;
+    overflow:scroll;
+    white-space: nowrap;
+    height: 35px;
+    border-radius: 0px;
+    border: none;
+    
+}
+hr{
+    width: 80vw;
+    margin:10px 0;
+}
+
+.add-button {
+    font-weight: 600;
+    width: 80vw;
+    background-color: #0c8d1d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; 
+    padding: 5px 10px;
+}
+.add-button:hover {
+    background-color: #024722;
+}

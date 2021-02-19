@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     flex-direction: row; 
     margin:0;
+    margin-top: 60px;
     padding:0;   
     justify-content: center;
 }
@@ -40,14 +41,14 @@ img {
 
 button {
     font-weight: 600;
-    background-color: #25a31d;
+    background-color: #b3c1ff;
     color: #ffffff;
     border: none;
     border-radius: 8px; 
     padding: 5px 10px;
 }
 button:hover {
-    background-color: #134e0f;
+    background-color: #215cff;
 }
 
 

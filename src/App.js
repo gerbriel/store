@@ -11,8 +11,9 @@ import Row from 'react-bootstrap/row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from './components/Search/Search';
 import Auth from './containers/Auth/Auth';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Logout from './components/Logout/Logout';
+import ProductDetails from './components/Product/ProductDetails/ProductDetails';
 
 
 
@@ -43,13 +44,12 @@ const App = () => {
       <Container>
         <Row>
         <ProductGrid isLoading={isLoading} items={items}/>
-        <Cart cartItems={cartItems}/>
         </Row>
+        <ProductDetails items={items}></ProductDetails>
       </Container>
-  
+      <Cart cartItems={cartItems}/>
       </div>
       <Logout />
- 
     </div>
     </BrowserRouter>
   );

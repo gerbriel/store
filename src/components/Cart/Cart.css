@@ -1,0 +1,24 @@
+.add-cart-button {
+    font-weight: 600;
+
+    background-color: #0c8d1d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; 
+    padding: 5px 10px;
+}
+.add-cart-button:hover {
+    background-color: #024722;
+}
+
+.remove-cart-button {
+    font-weight: 600;
+    background-color: #ffafaf;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; 
+    padding: 5px 10px;
+}
+.remove-cart-button:hover {
+    background-color: #ff0000;
+}
